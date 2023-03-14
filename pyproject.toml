@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "analytics-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Tom Kuson <mail@tjkuson.me>"]
+readme = "README.md"
+packages = [{include = "analytics_pipeline"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Faker = "^17.6.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+mypy = "^1.1.1"
+ruff = "^0.0.254"
+ssort = "^0.11.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ["py311"]
+
+[tool.ruff]
+select = [
+    "E",
+    "F",
+    "I",
+    "N",
+    "D",
+    "UP",
+    "ANN",
+    "S",
+    "BLE",
+    "B",
+    "A",
+    "C4",
+    "DTZ",
+    "DJ",
+    "EM",
+    "ISC",
+    "G",
+    "PIE",
+    "PT",
+    "RET",
+    "SIM",
+    "TID",
+    "TCH",
+    "ARG",
+    "PD",
+    "PL",
+    "TRY",
+    "NPY",
+    "RUF"
+]
+line-length = 88
+target-version = "py311"

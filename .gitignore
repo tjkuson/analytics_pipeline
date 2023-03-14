@@ -98,3 +98,7 @@ ENV/
 log_a.txt
 log_b.txt
 db.sqlite
+
+.ruff_cache
+
+.mypy_cache
